@@ -12,7 +12,7 @@ body{
 
 
 /*<!----------------- Encabezado + Menú inicio ----------------->*/
-header{
+/*header{
     border-color:snow;
     border-style: groove;
     width: 100%;
@@ -69,6 +69,31 @@ nav a:hover{
 
 /*<!----------------- Encabezado + Menú cierre ----------------->*/
 
+/*<!----------------- Encabezado + Menú con Bootstrap Inicio ----------------->*/
+
+.navbar-expand-md{
+    background-color: brown;
+}
+
+.navbar-img{
+    border: white;
+    border-style: solid;
+    border-radius: 10%;
+}
+.nav-link{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+
+
+/*<!----------------- Encabezado + Menú con Bootstrap cierre ----------------->*/
+
 /*<!----------------- INDEX Inicio ----------------->*/
 .sectionportada{
     display: grid;
@@ -103,7 +128,7 @@ nav a:hover{
     font-family: 'Archivo', sans-serif;
     font-style: italic;
     font-weight: 1000;
-    font-size: 20px;
+    font-size: 15px;
     float: left;
     margin-top: 50px;
     margin-left: 150px;
@@ -202,7 +227,7 @@ nav a:hover{
 /*<!----------------- OBRAS Cierre ----------------->*/
 
 /*<!----------------- PARTICIPACIONES Inicio ----------------->*/
-table{
+/*table{
     display: inline-table;
     margin-left: 50px;
     margin-bottom: 100px;
@@ -225,6 +250,22 @@ table tr td{
     font-weight: bold;
 }
 /*<!----------------- PARTICIPACIONES Cierre ----------------->*/
+
+/*<!----------------- PARTICIPACIONES con Bootstrap Inicio ----------------->*/
+
+.titulo-tabla{
+    font-size: 50px;
+}
+th{
+    font-weight: 1000;
+    font-size: 20px;
+}
+td{
+    padding: 10px;
+    font-weight: 600;
+}
+
+/*<!----------------- PARTICIPACIONES con Bootstrap Cierre ----------------->*/
 
 /*<!----------------- CONTACTO Inicio ----------------->*/
 .contacto{
@@ -260,9 +301,9 @@ table tr td{
     display: inline;
     float: right;
 }
-/*<!----------------- CONTACTO Inicio ----------------->*/
+/*<!----------------- CONTACTO Cierre ----------------->*/
 
-/*<!----------------- FOOTER inicio ----------------->*/
+/*<!----------------- FOOTER Inicio ----------------->*/
 footer{
     display: flex;
     flex-direction: row;
