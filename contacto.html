@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <link rel="shortcut icon" href="multimedia_galeria/firma1.ico">
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+        <!-- Encabezado + Menú inicio -->
+        <header>
+                                
+            <p><img class="Encabezado__firma" src="multimedia_galeria/firma2.JPG" alt="" height="112" width="302">Galería Brandi</p>
+            
+            <nav>
+                    <ul>
+                            <a href="index.html"><li>Home</li></a>
+                            <a href="biografia.html"><li>Biografía</li></a>
+                            <a href="obras.html"><li>Obras</li></a>
+                            <a href="participaciones.html"><li>Participaciones</li></a>
+                            <a href="contacto.html"><li>Contacto</li></a>
+                    </ul>
+            </nav>
+
+        </header>
+        <!-- Encabezado + Menú cierre -->
+
+        <section class="sectioncontacto">
+            
+            <form class="contacto" action="enviar.php" method="post" enctype="text/plain">
+                <img class="imagencontacto" src="multimedia_galeria/obra_7.jpg" alt="Obra 7" height="482" width="388">
+                
+                <h2 class="h2contacto">CONTACTO</h2>
+                <label for="Nombre y Apellido">Nombre y Apellido</label>
+                <input type="text" name="Nombre y Apellido" required>
+
+                <br>
+                <br>
+                <label for="Pais">Pais</label>
+                <select name="Pais" id="">Pais
+                    <option hidden selected>Selecciona un pais</option>          
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="España">España</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="México">México</option>
+                </select>
+
+                <br>
+                <br>
+                <div>Deseo suscribirme al Newsletter</div>
+                <input type="checkbox">
+
+                <br>
+                <br>
+                <label for="Email">Email</label>
+                <input type="email" name="Email" required>
+
+                <br>
+                <br>
+                <label for="Comentarios">Comentarios</label>
+
+                <br>
+                <textarea name="Comentarios" id="" cols="30" rows="10" placeholder="Dejanos tu comentario" required></textarea>
+
+                <br>
+                <input type="submit">
+                <input type="reset">
+
+            </form>
+
+        </section>
+
+        <!-- Footer inicio -->
+        <footer>
+
+            <img class="firmafooter" src="multimedia_galeria/firma2.JPG" alt="" height="56" width="151">
+    
+            <div class="footer_redes">
+                            <img class="instagram" src="https://icongr.am/fontawesome/instagram.svg?size=50&color=650606" alt="logo_instagram" height="50" width="50">
+    
+                            <img class="facebook" src="https://icongr.am/fontawesome/facebook-square.svg?size=50&color=650606" alt="logo_facebook" height="50" width="50">
+                    </div>                
+    
+            <a class="footer_contacto" href="contacto.html">
+                    <h4>CONTACTO</h4></a>
+    
+        </footer>
+    
+            <!-- Footer cierre -->
+        
+</body>
+</html>
