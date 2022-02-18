@@ -181,7 +181,7 @@ nav a:hover{
 
 /*<!----------------- OBRAS Inicio ----------------->*/
 
-.obras{
+/*.obras{
     display: grid;
     font-family: 'Archivo', sans-serif;
     grid-template-columns: 600px 600px;
@@ -226,6 +226,19 @@ nav a:hover{
 
 /*<!----------------- OBRAS Cierre ----------------->*/
 
+/*<!----------------- OBRAS con Bootstrap Inicio ----------------->*/
+
+.card{
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.card-img-top{
+    margin: auto;
+}
+
+/*<!----------------- OBRAS con Bootstrap Fin ----------------->*/
+
 /*<!----------------- PARTICIPACIONES Inicio ----------------->*/
 /*table{
     display: inline-table;
@@ -268,7 +281,7 @@ td{
 /*<!----------------- PARTICIPACIONES con Bootstrap Cierre ----------------->*/
 
 /*<!----------------- CONTACTO Inicio ----------------->*/
-.contacto{
+/*.contacto{
     color: black;
     font-family: 'Archivo', sans-serif;
     font-weight: bold;
@@ -302,6 +315,32 @@ td{
     float: right;
 }
 /*<!----------------- CONTACTO Cierre ----------------->*/
+
+/*<!----------------- CONTACTO con Bootstrap Inicio ----------------->*/
+
+.h2contacto{
+    font-weight: bold;
+    font-family: 'Archivo', sans-serif;
+    margin-bottom: 30px;
+}
+.container-contacto{
+    width: 600px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    padding: 25px;
+}
+
+.btn-primary{
+    background-color: brown;
+}
+
+.btn-primary:hover{
+    color: black;
+}
+
+/*<!----------------- CONTACTO con Bootstrap Cierre ----------------->*/
+
+
 
 /*<!----------------- FOOTER Inicio ----------------->*/
 footer{
