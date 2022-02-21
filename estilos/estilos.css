@@ -175,7 +175,7 @@ nav a:hover{
 
 /*<!----------------- OBRAS Inicio ----------------->*/
 
-/*.obras{
+.obras{
     display: grid;
     font-family: 'Archivo', sans-serif;
     grid-template-columns: 600px 600px;
@@ -217,21 +217,13 @@ nav a:hover{
     float: left;
 }
 
+.obra5{
+    transform: translateZ(0) scale(1);
+    transition-duration: 1s;
+}
+
 
 /*<!----------------- OBRAS Cierre ----------------->*/
-
-/*<!----------------- OBRAS con Bootstrap Inicio ----------------->*/
-
-.card{
-    padding: 10px;
-    padding-bottom: 50px;
-}
-
-.card-img-top{
-    margin: auto;
-}
-
-/*<!----------------- OBRAS con Bootstrap Fin ----------------->*/
 
 /*<!----------------- PARTICIPACIONES Inicio ----------------->*/
 /*table{
