@@ -22,7 +22,6 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-
 header img{
     border-style: groove;
     border-color: chocolate;
@@ -30,7 +29,6 @@ header img{
     height: 112px;
     width: 302px;
 }
-
 header p{
     float: left;
     width: 25%;
@@ -41,7 +39,6 @@ header p{
     margin-bottom: 50px;
     margin-left: 50px;
 }
-
 header nav{
     font-family: 'Archivo', sans-serif;
     float: right;
@@ -52,21 +49,17 @@ header nav{
     color: brown;
     text-shadow: 2px 2px 2px grey; 
 }
-
 nav ul li{
     list-style: none;
     margin-top: 5px;
 }
-
 nav a{
     text-decoration: none;
     color: brown;
 }
-
 nav a:hover{
     color: whitesmoke;
 }
-
 /*<!----------------- Encabezado + Menú cierre ----------------->*/
 
 /*<!----------------- Encabezado + Menú con Bootstrap Inicio ----------------->*/
@@ -235,14 +228,11 @@ nav a:hover{
     border: solid;
     border-color: brown;   
 }
-
-
 table tr th{
     color: black;
     font-family: 'Archivo', sans-serif;
     font-weight: bold;
 }
-
 table tr td{
     color: black;
     font-family: 'Archivo', sans-serif;
@@ -277,18 +267,15 @@ td{
     margin-left: 100px;
     position: relative;
 }
-
 .h2contacto{
     color: black;
     font-size: 50px;
     font-family: 'Archivo', sans-serif;
     font-weight: bold;
 }
-
 .sectioncontacto{
     position: static;
 }
-
 .imagencontacto{
     border-style: solid;
     border-color: brown;

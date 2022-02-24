@@ -1,0 +1,147 @@
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2017/06/20/17/15/wall-2423815__340.jpg");
+  background-position: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar-expand-md {
+  background-color: brown;
+}
+
+.navbar-expand-md .navbar-img {
+  border: white;
+  border-style: solid;
+  border-radius: 10%;
+}
+
+.navbar-expand-md .nav-link {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navbar-expand-md .nav-link:hover {
+  color: black;
+}
+
+.biografia_div {
+  font-family: 'Archivo', sans-serif;
+  padding: 15px;
+}
+
+.biografia_div .titulo_biografia {
+  color: brown;
+  font-weight: none;
+  margin-left: 20px;
+}
+
+.biografia_div .biografia_texto {
+  text-align: justify;
+  text-justify: distribute-all-lines;
+  font-weight: none;
+  font-family: 'Archivo', sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.biografia_div .titulo_biografia {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 20px;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 20px;
+    width: 100%;
+  }
+}
+
+.biografia_footer {
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: brown;
+  margin-top: 50px;
+}
+
+.biografia_footer .footer_contacto {
+  font-family: 'Archivo', sans-serif;
+  float: right;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin-right: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.biografia_footer footer .footer_contacto:hover {
+  color: black;
+}
+
+.biografia_footer .firmafooter {
+  border: white;
+  border-style: solid;
+  border-radius: 10%;
+  float: left;
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 56px;
+  width: 151px;
+}
+
+.biografia_footer .footer_redes {
+  position: absolute;
+  left: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.biografia_footer .instagram {
+  margin-right: 200px;
+  height: 50px;
+  width: 50px;
+}
+
+.biografia_footer .facebook {
+  height: 50px;
+  width: 50px;
+}
+/*# sourceMappingURL=estilosconsass.css.map */

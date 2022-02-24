@@ -1,0 +1,134 @@
+$fontx: 20px;
+$fontm: 35px;
+$fotnl: 50px;
+
+$color1: brown;
+$color2: white;
+$color3: black;
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/20/17/15/wall-2423815__340.jpg");
+    background-position: center;
+    display: grid;
+    box-sizing: border-box;
+}
+
+.navbar-expand-md{
+    background-color: $color1;
+
+    .navbar-img{
+        border: $color2;
+        border-style: solid;
+        border-radius: 10%;
+    }
+    .nav-link{
+        color: $color2;
+        font-size: $fontx;
+        font-weight: 600;
+    }
+    
+    .nav-link:hover{
+        color: $color3;
+    }
+}
+
+
+
+
+.biografia_div{
+    font-family: 'Archivo', sans-serif;
+    padding: 15px;
+
+    .titulo_biografia{
+        color: $color1;
+        font-weight: none;
+        margin-left: 20px;
+    }
+    .biografia_texto{
+        text-align: justify;
+        text-justify: distribute-all-lines;
+        font-weight: none;
+        font-family: 'Archivo', sans-serif;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .titulo_biografia {
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+    
+    @keyframes slidein {
+        from {
+        margin-left: 100%;
+        width: 300%
+        }
+    
+        to {
+        margin-left: 20px;
+        width: 100%;
+        }
+    }
+}
+
+
+.biografia_footer{
+
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: $color1;
+    margin-top: 50px;
+    
+    .footer_contacto{
+        font-family: 'Archivo', sans-serif;
+        float: right;
+        font-weight: bold;
+        color: $color2;
+        text-decoration: none;
+        margin-right: 100px;
+        display: flex;
+        float: right;
+        font-size: $fontx;
+        font-weight: 600;
+    }
+    
+    footer .footer_contacto:hover{
+        color: $color3;
+    }
+    
+    .firmafooter{
+        border: $color2;
+        border-style: solid;
+        border-radius: 10%;
+        float: left;
+        margin-left: 50px;
+        display: flex;
+        height: 56px;
+        width: 151px;
+    }
+    
+    .footer_redes{
+        position: absolute;
+        left: 500px;
+        display: flex;
+    }
+    
+    .instagram{
+        margin-right: 200px;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .facebook{
+        height: 50px;
+        width: 50px;
+    }
+}
