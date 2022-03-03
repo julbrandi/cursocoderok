@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;1,100&display=swap');
+
+* {
+    font-family: 'Archivo', sans-serif;
+}
+
 $fontx: 20px;
 $fontm: 35px;
 $fotnl: 50px;
@@ -32,22 +38,19 @@ body{
     }
 }
 
-
-
-
 .biografia_div{
     font-family: 'Archivo', sans-serif;
     padding: 15px;
 
     .titulo_biografia{
         color: $color1;
-        font-weight: none;
+        font-weight: bold;
         margin-left: 20px;
     }
     .biografia_texto{
         text-align: justify;
         text-justify: distribute-all-lines;
-        font-weight: none;
+        font-weight: bold;
         font-family: 'Archivo', sans-serif;
         margin-left: 20px;
         margin-right: 20px;
@@ -132,3 +135,6 @@ body{
         width: 50px;
     }
 }
+
+@import "_map_extend_mixin";
+
