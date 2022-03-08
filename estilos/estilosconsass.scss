@@ -4,9 +4,10 @@
     font-family: 'Archivo', sans-serif;
 }
 
-$fontx: 20px;
-$fontm: 35px;
-$fotnl: 50px;
+$fontx: 1rem;
+$fontm: 1.5rem;
+$fontl: 2rem;
+$fontxl: 3rem;
 
 $color1: brown;
 $color2: white;
@@ -15,8 +16,19 @@ $color3: black;
 body{
     background-image: url("https://cdn.pixabay.com/photo/2017/06/20/17/15/wall-2423815__340.jpg");
     background-position: center;
-    display: grid;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-size: 20px;
+}
+
+/*<!----------------- ENCABEZADO Inicio ----------------->*/
+
+.navbar-toggler{
+    background-color: $color2;
+    .navbar-toggler-icon{
+        background-color: $color1;
+    }
 }
 
 .navbar-expand-md{
@@ -29,7 +41,7 @@ body{
     }
     .nav-link{
         color: $color2;
-        font-size: $fontx;
+        font-size: $fontm;
         font-weight: 600;
     }
     
@@ -37,6 +49,81 @@ body{
         color: $color3;
     }
 }
+
+/*<!----------------- ENCABEZADO Cierre ----------------->*/
+
+/*<!----------------- INDEX Inicio ----------------->*/
+
+.div-bienvenidos{
+    display: flex;
+    margin: 80px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+
+    .h1-bienvenidos{
+        font-family: 'Archivo', sans-serif;
+        font-size: $fontxl;
+        color: $color1;
+        font-weight: 800;
+    }
+}
+.contenedor_index{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+        "div_parrafo_index div_imagen_index"  
+}
+    .div_parrafo_index{
+        grid-area: div_parrafo_index;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        float: left;
+        margin-top: 50px;
+        margin-left: 150px;           
+        transition: width 2s, height 2s, transform 2s;
+
+        .obertura{
+            font-size: $fontl;
+        }
+        .portada{
+            font-family: 'Archivo', sans-serif;
+            font-style: italic;
+            font-weight: 1000;
+            font-size: $fontx;
+        }
+    }
+        
+    .div_parrafo_index:hover{
+        transform : scale(1.1);
+    }        
+    
+    .div_imagen_index{
+        grid-area: div_imagen_index;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 70px;
+        right: 0px;
+
+
+        .imagenportada{
+            border-style: solid;
+            border-color: $color1;
+            padding: 5px;
+            height: 600px;
+            width: 360px;
+        }
+    }
+    
+/*<!----------------- INDEX Cierre ----------------->*/
+
+/*<!----------------- BIOGRAFIA Inicio ----------------->*/
 
 .biografia_div{
     font-family: 'Archivo', sans-serif;
@@ -46,12 +133,14 @@ body{
         color: $color1;
         font-weight: bold;
         margin-left: 20px;
+        font-size: $fontl;
     }
     .biografia_texto{
         text-align: justify;
         text-justify: distribute-all-lines;
         font-weight: bold;
         font-family: 'Archivo', sans-serif;
+        font-size: $fontx;
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -73,10 +162,308 @@ body{
         }
     }
 }
+/*<!----------------- BIOGRAFIA Cierre ----------------->*/
+
+/*<!----------------- OBRAS Inicio ----------------->*/
+
+.obras{
+    display: grid;
+    font-family: 'Archivo', sans-serif;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 600px 600px 600px 600px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+        "obra1 obra2"
+        "obra3 obra4"
+        "obra5 obra6"
+        "obra7 obra8"
+        "obra9 obra10";
+        width: 100%;
+        height: 100%;
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-bottom: 100px;
+
+    .obra1{
+        grid-area: obra1;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: baseline;
+        font-size: $fontx;
+        font-weight: bold;
+        img{
+            border-style: solid;
+            border-color: $color1;
+            padding: 5px;
+            float: left;
+        }
+    }
+    .obra2{
+        grid-area: obra2;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: baseline;
+        font-size: $fontx;
+        font-weight: bold;
+        padding-left: 50px;
+        img{
+            border-style: solid;
+            border-color: $color1;
+            padding: 5px;
+            float: left;
+        }
+    }
+
+    .obra3{
+        grid-area: obra3;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: baseline;
+        font-size: $fontx;
+        font-weight: bold;
+        margin-top: 100px;
+        img{
+            border-style: solid;
+            border-color: $color1;
+            padding: 5px;
+            float: left;
+        }
+    }
+    
+    .obra4{
+        grid-area: obra4;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: baseline;
+        font-size: $fontx;
+        font-weight: bold;
+        padding-left: 50px;
+        img{
+            border-style: solid;
+            border-color: $color1;
+            padding: 5px;
+            float: left;
+        }
+    }
+
+    .obra5{
+        grid-area: obra5;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: baseline;
+        font-size: $fontx;
+        font-weight: bold;
+        img{
+            border-style: solid;
+            border-color: $color1;
+            padding: 5px;
+            float: left;
+        }
+    }
+
+    .obra6{
+        grid-area: obra6;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: baseline;
+        font-size: $fontx;
+        font-weight: bold;
+        padding-left: 50px;
+        img{
+            border-style: solid;
+            border-color: $color1;
+            padding: 5px;
+            float: left;
+        }
+    }
+
+    .obra7{
+        grid-area: obra7;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: baseline;
+        font-size: $fontx;
+        font-weight: bold;
+        img{
+            border-style: solid;
+            border-color: $color1;
+            padding: 5px;
+            float: left;
+        }
+    }
+
+    .obra8{
+        grid-area: obra8;
+        grid-column: 2/3;
+        grid-row: 4/5;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: baseline;
+        font-size: $fontx;
+        font-weight: bold;
+        padding-left: 50px;
+        img{
+            border-style: solid;
+            border-color: $color1;
+            padding: 5px;
+            float: left;
+        }
+    }
+
+    .obra9{
+        grid-area: obra9;
+        grid-column: 1/2;
+        grid-row: 5/6;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: baseline;
+        font-size: $fontx;
+        font-weight: bold;
+        margin-top: 100px;
+        img{
+            border-style: solid;
+            border-color: $color1;
+            padding: 5px;
+            float: left;
+        }
+    }
+
+    .obra10{
+        grid-area: obra10;
+        grid-column: 2/3;
+        grid-row: 5/6;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: baseline;
+        font-size: $fontx;
+        font-weight: bold;
+        padding-left: 50px;
+        margin-top: 100px;
+        img{
+            border-style: solid;
+            border-color: $color1;
+            padding: 5px;
+            float: left;
+        }
+    }    
+    .obra11{
+        grid-area: obra11;
+        grid-column: 1/2;
+        grid-row: 6/7;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: baseline;
+        font-size: $fontx;
+        font-weight: bold;
+        margin-top: 100px;
+        img{
+            border-style: solid;
+            border-color: $color1;
+            padding: 5px;
+            float: left;
+        }
+    }
+
+    .obra12{
+        grid-area: obra12;
+        grid-column: 2/3;
+        grid-row: 6/7;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: baseline;
+        font-size: $fontx;
+        font-weight: bold;
+        padding-left: 50px;
+        margin-top: 100px;
+        img{
+            border-style: solid;
+            border-color: $color1;
+            padding: 5px;
+            float: left;
+        }
+    }    
+}
 
 
-.biografia_footer{
 
+/*<!----------------- OBRAS Cierre ----------------->*/
+
+/*<!----------------- PARTICIPACIONES Inicio ----------------->*/
+
+.titulo-tabla{
+    margin: 80px;
+    font-size: 50px;
+    font-weight: 800;
+}
+th{
+    font-weight: 1000;
+    font-size: 20px;
+}
+td{
+    padding: 10px;
+    font-weight: 600;
+}
+
+
+/*<!----------------- PARTICIPACIONES Cierre ----------------->*/
+
+/*<!----------------- CONTACTO Inicio ----------------->*/
+
+
+.container-contacto{
+    width: 600px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    padding: 25px;
+
+    .h2contacto{
+        font-weight: bold;
+        font-family: 'Archivo', sans-serif;
+        font-size: $fontl;
+        margin-bottom: 30px;
+    }
+
+    .btn-primary{
+        background-color: $color1;
+    }
+    
+    .btn-primary:hover{
+        color: $color3;
+    }
+}
+
+
+/*<!----------------- CONTACTO Cierre ----------------->*/
+
+/*<!----------------- FOOTER Inicio ----------------->*/
+
+.footer{
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -97,13 +484,12 @@ body{
         color: $color2;
         text-decoration: none;
         margin-right: 100px;
-        display: flex;
-        float: right;
-        font-size: $fontx;
+        font-size: $fontm;
         font-weight: 600;
+        display: flex;
     }
     
-    footer .footer_contacto:hover{
+    .footer a:hover{
         color: $color3;
     }
     
@@ -122,19 +508,21 @@ body{
         position: absolute;
         left: 500px;
         display: flex;
-    }
-    
-    .instagram{
-        margin-right: 200px;
-        height: 50px;
-        width: 50px;
-    }
-    
-    .facebook{
-        height: 50px;
-        width: 50px;
+
+        .instagram{
+            margin-right: 200px;
+            height: 50px;
+            width: 50px;
+        }
+        
+        .facebook{
+            height: 50px;
+            width: 50px;
+        }
     }
 }
+
+/*<!----------------- FOOTER Cierre ----------------->*/
 
 @import "_map_extend_mixin";
 

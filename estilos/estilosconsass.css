@@ -6,10 +6,20 @@
 body {
   background-image: url("https://cdn.pixabay.com/photo/2017/06/20/17/15/wall-2423815__340.jpg");
   background-position: center;
-  display: -ms-grid;
-  display: grid;
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 20px;
+}
+
+/*<!----------------- ENCABEZADO Inicio ----------------->*/
+.navbar-toggler {
+  background-color: white;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-color: brown;
 }
 
 .navbar-expand-md {
@@ -24,7 +34,7 @@ body {
 
 .navbar-expand-md .nav-link {
   color: white;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -32,6 +42,108 @@ body {
   color: black;
 }
 
+/*<!----------------- ENCABEZADO Cierre ----------------->*/
+/*<!----------------- INDEX Inicio ----------------->*/
+.div-bienvenidos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+}
+
+.div-bienvenidos .h1-bienvenidos {
+  font-family: 'Archivo', sans-serif;
+  font-size: 3rem;
+  color: brown;
+  font-weight: 800;
+}
+
+.contenedor_index {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[1];
+      grid-template-rows: repeat(1, auto);
+      grid-template-areas: "div_parrafo_index div_imagen_index";
+}
+
+.div_parrafo_index {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: div_parrafo_index;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  float: left;
+  margin-top: 50px;
+  margin-left: 150px;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, transform 2s;
+  transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+}
+
+.div_parrafo_index .obertura {
+  font-size: 2rem;
+}
+
+.div_parrafo_index .portada {
+  font-family: 'Archivo', sans-serif;
+  font-style: italic;
+  font-weight: 1000;
+  font-size: 1rem;
+}
+
+.div_parrafo_index:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.div_imagen_index {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: div_imagen_index;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-top: 70px;
+  right: 0px;
+}
+
+.div_imagen_index .imagenportada {
+  border-style: solid;
+  border-color: brown;
+  padding: 5px;
+  height: 600px;
+  width: 360px;
+}
+
+/*<!----------------- INDEX Cierre ----------------->*/
+/*<!----------------- BIOGRAFIA Inicio ----------------->*/
 .biografia_div {
   font-family: 'Archivo', sans-serif;
   padding: 15px;
@@ -41,6 +153,7 @@ body {
   color: brown;
   font-weight: bold;
   margin-left: 20px;
+  font-size: 2rem;
 }
 
 .biografia_div .biografia_texto {
@@ -48,6 +161,7 @@ body {
   text-justify: distribute-all-lines;
   font-weight: bold;
   font-family: 'Archivo', sans-serif;
+  font-size: 1rem;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -81,7 +195,461 @@ body {
   }
 }
 
-.biografia_footer {
+/*<!----------------- BIOGRAFIA Cierre ----------------->*/
+/*<!----------------- OBRAS Inicio ----------------->*/
+.obras {
+  display: -ms-grid;
+  display: grid;
+  font-family: 'Archivo', sans-serif;
+  -ms-grid-columns: 600px 600px;
+      grid-template-columns: 600px 600px;
+  -ms-grid-rows: 600px 600px 600px 600px;
+      grid-template-rows: 600px 600px 600px 600px;
+  grid-auto-flow: row;
+      grid-template-areas: "obra1 obra2" "obra3 obra4" "obra5 obra6" "obra7 obra8" "obra9 obra10";
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-bottom: 100px;
+}
+
+.obras .obra1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: obra1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.obras .obra1 img {
+  border-style: solid;
+  border-color: brown;
+  padding: 5px;
+  float: left;
+}
+
+.obras .obra2, .obras .obra4, .obras .obra6, .obras .obra8 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: obra2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+.obras .obra2 img, .obras .obra4 img, .obras .obra6 img, .obras .obra8 img {
+  border-style: solid;
+  border-color: brown;
+  padding: 5px;
+  float: left;
+}
+
+.obras .obra3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: obra3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.obras .obra3 img {
+  border-style: solid;
+  border-color: brown;
+  padding: 5px;
+  float: left;
+}
+
+.obras .obra4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: obra4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+.obras .obra4 img {
+  border-style: solid;
+  border-color: brown;
+  padding: 5px;
+  float: left;
+}
+
+.obras .obra5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: obra5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.obras .obra5 img {
+  border-style: solid;
+  border-color: brown;
+  padding: 5px;
+  float: left;
+}
+
+.obras .obra6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: obra6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+.obras .obra6 img {
+  border-style: solid;
+  border-color: brown;
+  padding: 5px;
+  float: left;
+}
+
+.obras .obra7 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: obra7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.obras .obra7 img {
+  border-style: solid;
+  border-color: brown;
+  padding: 5px;
+  float: left;
+}
+
+.obras .obra8 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: obra8;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+.obras .obra8 img {
+  border-style: solid;
+  border-color: brown;
+  padding: 5px;
+  float: left;
+}
+
+.obras .obra9 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: obra9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.obras .obra9 img {
+  border-style: solid;
+  border-color: brown;
+  padding: 5px;
+  float: left;
+}
+
+.obras .obra10 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: obra10;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 50px;
+  margin-top: 100px;
+}
+
+.obras .obra10 img {
+  border-style: solid;
+  border-color: brown;
+  padding: 5px;
+  float: left;
+}
+
+.obras .obra11 {
+  grid-area: obra11;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.obras .obra11 img {
+  border-style: solid;
+  border-color: brown;
+  padding: 5px;
+  float: left;
+}
+
+.obras .obra12 {
+  grid-area: obra12;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 50px;
+  margin-top: 100px;
+}
+
+.obras .obra12 img {
+  border-style: solid;
+  border-color: brown;
+  padding: 5px;
+  float: left;
+}
+
+/*<!----------------- OBRAS Cierre ----------------->*/
+/*<!----------------- PARTICIPACIONES Inicio ----------------->*/
+.titulo-tabla {
+  margin: 80px;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+th {
+  font-weight: 1000;
+  font-size: 20px;
+}
+
+td {
+  padding: 10px;
+  font-weight: 600;
+}
+
+/*<!----------------- PARTICIPACIONES Cierre ----------------->*/
+/*<!----------------- CONTACTO Inicio ----------------->*/
+.container-contacto {
+  width: 600px;
+  font-family: 'Archivo', sans-serif;
+  font-weight: bold;
+  padding: 25px;
+}
+
+.container-contacto .h2contacto {
+  font-weight: bold;
+  font-family: 'Archivo', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.container-contacto .btn-primary {
+  background-color: brown;
+}
+
+.container-contacto .btn-primary:hover {
+  color: black;
+}
+
+/*<!----------------- CONTACTO Cierre ----------------->*/
+/*<!----------------- FOOTER Inicio ----------------->*/
+.footer {
   position: relative;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -99,26 +667,25 @@ body {
   margin-top: 50px;
 }
 
-.biografia_footer .footer_contacto {
+.footer .footer_contacto {
   font-family: 'Archivo', sans-serif;
   float: right;
   font-weight: bold;
   color: white;
   text-decoration: none;
   margin-right: 100px;
+  font-size: 1.5rem;
+  font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  float: right;
-  font-size: 20px;
-  font-weight: 600;
 }
 
-.biografia_footer footer .footer_contacto:hover {
+.footer .footer a:hover {
   color: black;
 }
 
-.biografia_footer .firmafooter {
+.footer .firmafooter {
   border: white;
   border-style: solid;
   border-radius: 10%;
@@ -131,7 +698,7 @@ body {
   width: 151px;
 }
 
-.biografia_footer .footer_redes {
+.footer .footer_redes {
   position: absolute;
   left: 500px;
   display: -webkit-box;
@@ -139,17 +706,18 @@ body {
   display: flex;
 }
 
-.biografia_footer .instagram {
+.footer .footer_redes .instagram {
   margin-right: 200px;
   height: 50px;
   width: 50px;
 }
 
-.biografia_footer .facebook {
+.footer .footer_redes .facebook {
   height: 50px;
   width: 50px;
 }
 
+/*<!----------------- FOOTER Cierre ----------------->*/
 .pintura--obra {
   display: -webkit-box;
   display: -ms-flexbox;
